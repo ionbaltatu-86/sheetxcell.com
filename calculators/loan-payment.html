@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loan Payment Calculator - SheetXCell</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <h1>SheetXCell</h1>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../calculators.html">Calculators</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Loan Payment Calculator</h2>
+    <p>Estimate your monthly loan payment, total paid, and total interest.</p>
+
+    <div class="calculator-box">
+      <label>Loan Amount</label>
+      <input type="number" id="loanAmount" placeholder="20000" />
+
+      <label>Annual Interest Rate (%)</label>
+      <input type="number" id="interestRate" placeholder="7" step="0.01" />
+
+      <label>Loan Term (years)</label>
+      <input type="number" id="loanYears" placeholder="5" />
+
+      <button onclick="calculateLoan()">Calculate</button>
+
+      <div id="result" class="result"></div>
+    </div>
+
+    <section>
+      <h3>How to use</h3>
+      <p>Enter your loan amount, annual interest rate, and loan term. The calculator will show your estimated monthly payment.</p>
+    </section>
+
+    <section>
+      <h3>Example</h3>
+      <p>A $20,000 loan at 7% over 5 years gives you a fixed monthly payment and shows how much interest you pay overall.</p>
+    </section>
+  </main>
+
+  <script src="../script.js"></script>
+</body>
+</html>
