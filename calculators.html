@@ -4,13 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Calculators - SheetXCell</title>
+  <meta name="description" content="Browse all free calculators on SheetXCell." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <nav class="nav">
-      <h1>SheetXCell</h1>
-      <ul>
+    <nav class="nav container">
+      <a href="index.html" class="brand">SheetXCell</a>
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="calculators.html">Calculators</a></li>
         <li><a href="about.html">About</a></li>
@@ -20,13 +21,38 @@
   </header>
 
   <main class="container">
-    <h2>All Calculators</h2>
-    <div class="grid">
-      <a class="card" href="calculators/loan-payment.html">Loan Payment Calculator</a>
-      <a class="card" href="calculators/debt-payoff.html">Debt Payoff Calculator</a>
-      <a class="card" href="calculators/savings-goal.html">Savings Goal Calculator</a>
-      <a class="card" href="calculators/mortgage-extra-payment.html">Mortgage Extra Payment Calculator</a>
-    </div>
+    <section class="section">
+      <h1>All Calculators</h1>
+      <p>Choose a calculator below.</p>
+
+      <div class="grid">
+        <a class="card" href="calculators/loan-payment.html">
+          <h3>Loan Payment Calculator</h3>
+          <p>Estimate monthly payment, total paid, and interest cost.</p>
+        </a>
+
+        <a class="card" href="calculators/debt-payoff.html">
+          <h3>Debt Payoff Calculator</h3>
+          <p>Estimate how long it may take to pay off your debt.</p>
+        </a>
+
+        <a class="card" href="calculators/savings-goal.html">
+          <h3>Savings Goal Calculator</h3>
+          <p>Estimate how much to save monthly to hit your goal.</p>
+        </a>
+
+        <a class="card" href="calculators/mortgage-extra-payment.html">
+          <h3>Mortgage Extra Payment Calculator</h3>
+          <p>Estimate how extra payments can reduce your mortgage term.</p>
+        </a>
+      </div>
+    </section>
   </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 SheetXCell. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
