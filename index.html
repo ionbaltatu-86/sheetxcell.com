@@ -1,36 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Loan Calculator</title>
-  <style>
-    body { font-family: Arial; text-align: center; margin-top: 50px; }
-    input { padding: 10px; margin: 5px; }
-    button { padding: 10px; }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SheetXCell - Money Calculators</title>
+  <meta name="description" content="Simple money calculators to help you plan loans, debt payoff, savings, and mortgage extra payments." />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header>
+    <nav class="nav">
+      <h1>SheetXCell</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="calculators.html">Calculators</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<h1>Loan Payment Calculator</h1>
+  <main class="container">
+    <section class="hero">
+      <h2>Simple calculators to save money and plan better</h2>
+      <p>Use free tools for loans, debt payoff, savings goals, and mortgage planning.</p>
+      <a class="btn" href="calculators.html">Try the calculators</a>
+    </section>
 
-<input id="amount" placeholder="Loan Amount"><br>
-<input id="rate" placeholder="Interest %"><br>
-<input id="years" placeholder="Years"><br>
+    <section>
+      <h3>Featured calculators</h3>
+      <div class="grid">
+        <a class="card" href="calculators/loan-payment.html">Loan Payment Calculator</a>
+        <a class="card" href="calculators/debt-payoff.html">Debt Payoff Calculator</a>
+        <a class="card" href="calculators/savings-goal.html">Savings Goal Calculator</a>
+        <a class="card" href="calculators/mortgage-extra-payment.html">Mortgage Extra Payment Calculator</a>
+      </div>
+    </section>
+  </main>
 
-<button onclick="calculate()">Calculate</button>
-
-<h2 id="result"></h2>
-
-<script>
-function calculate() {
-  let P = document.getElementById("amount").value;
-  let r = document.getElementById("rate").value / 100 / 12;
-  let n = document.getElementById("years").value * 12;
-
-  let payment = (P * r) / (1 - Math.pow(1 + r, -n));
-  document.getElementById("result").innerText =
-    "Monthly Payment: $" + payment.toFixed(2);
-}
-</script>
-
+  <footer class="footer">
+    <p>© 2026 SheetXCell</p>
+  </footer>
 </body>
 </html>
