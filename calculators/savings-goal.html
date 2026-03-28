@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Savings Goal Calculator - SheetXCell</title>
+  <meta name="description" content="Calculate how much you need to save each month to reach your goal." />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header>
+    <nav class="nav container">
+      <a href="../index.html" class="brand">SheetXCell</a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../calculators.html">Calculators</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h1>Savings Goal Calculator</h1>
+      <p>Estimate the monthly savings needed to reach your target amount.</p>
+
+      <div class="calculator-box">
+        <label for="savingsGoal">Savings Goal</label>
+        <input type="number" id="savingsGoal" placeholder="10000" />
+
+        <label for="savingsRate">Annual Return / Interest Rate (%)</label>
+        <input type="number" id="savingsRate" placeholder="3" step="0.01" />
+
+        <label for="savingsYears">Years to Reach Goal</label>
+        <input type="number" id="savingsYears" placeholder="3" />
+
+        <button onclick="calculateSavingsGoal()">Calculate</button>
+
+        <div id="savingsResult" class="result-box">
+          <p class="small-note">Your results will appear here.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 SheetXCell. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
