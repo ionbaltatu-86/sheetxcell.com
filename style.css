@@ -1,94 +1,76 @@
-/* ===== Sticky layout fix ===== */
-html, body {
-  height: 100%;
+* {
+  color: #bfcae0;
 }
 
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-main {
-  flex: 1;
-}
-
-/* ===== Footer ===== */
-.site-footer {
-  background: #0f172a;
-  color: #e5e7eb;
-  padding: 50px 0 20px;
-  margin-top: 40px;
-}
-
-/* Grid layout */
-.footer-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  gap: 40px;
-}
-
-/* Columns */
 .footer-col h4 {
-  margin-bottom: 12px;
+  margin: 0 0 12px;
+  color: var(--white);
   font-size: 1rem;
-  color: #ffffff;
 }
 
 .footer-col ul {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
-.footer-col ul li {
-  margin-bottom: 8px;
+.footer-col li {
+  margin-bottom: 10px;
 }
 
-/* Links */
 .footer-col a {
-  color: #94a3b8;
+  color: #bfcae0;
   text-decoration: none;
-  font-size: 0.95rem;
 }
 
 .footer-col a:hover {
-  color: #ffffff;
+  color: var(--white);
   text-decoration: underline;
 }
 
-/* Brand */
-.footer-logo {
-  margin: 0;
-  font-size: 1.4rem;
-  color: #ffffff;
-}
-
-.footer-text {
-  margin-top: 10px;
-  color: #cbd5e1;
-  font-size: 0.95rem;
-  max-width: 300px;
-}
-
-/* Bottom bar */
 .footer-bottom {
-  border-top: 1px solid rgba(255,255,255,0.08);
-  margin-top: 30px;
+  margin-top: 28px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 16px;
   text-align: center;
-  font-size: 0.9rem;
-  color: #94a3b8;
+  color: #9fb0cf;
+  font-size: 0.95rem;
 }
 
-/* ===== Mobile ===== */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+  .calculator-layout,
   .footer-grid {
     grid-template-columns: 1fr;
-    text-align: center;
   }
 
-  .footer-text {
-    margin: 10px auto;
+  .hero {
+    padding: 32px;
+  }
+}
+
+@media (max-width: 760px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    padding: 16px 0;
+  }
+
+  .brand {
+    font-size: 1.7rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px 20px;
+  }
+
+  .hero {
+    padding: 26px;
+    border-radius: 22px;
+  }
+
+  .panel {
+    padding: 22px;
   }
 }
