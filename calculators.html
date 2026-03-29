@@ -8,84 +8,43 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <nav class="nav container">
+  <header class="site-header">
+    <div class="container navbar">
       <a href="index.html" class="brand">SheetXCell</a>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="calculators.html">Calculators</a></li>
+        <li><a href="calculators.html" class="active">Calculators</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-    </nav>
+    </div>
   </header>
 
-  <main class="container">
-    <section class="section">
-      <h1>All Calculators</h1>
-      <p>Choose a calculator below.</p>
+  <main>
+    <div class="container">
+      <section class="page-hero">
+        <h1>All Calculators</h1>
+        <p>Choose a calculator below and start with the tool that matches your goal.</p>
+      </section>
 
-      <div class="grid">
-        <a class="card" href="calculators/loan-payment.html">
-          <h3>Loan Payment Calculator</h3>
-          <p>Estimate monthly payment, total paid, and interest cost.</p>
-        </a>
-
-        <a class="card" href="calculators/debt-payoff.html">
-          <h3>Debt Payoff Calculator</h3>
-          <p>Estimate how long it may take to pay off your debt.</p>
-        </a>
-
-        <a class="card" href="calculators/savings-goal.html">
-          <h3>Savings Goal Calculator</h3>
-          <p>Estimate how much to save monthly to hit your goal.</p>
-        </a>
-
-        <a class="card" href="calculators/mortgage-extra-payment.html">
-          <h3>Mortgage Extra Payment Calculator</h3>
-          <p>Estimate how extra payments can reduce your mortgage term.</p>
-        </a>
-      </div>
-    </section>
-  </main>
-
- <footer class="site-footer">
-  <div class="container footer-grid">
-
-    <!-- Brand -->
-    <div class="footer-col">
-      <h3 class="footer-logo">SheetXCell</h3>
-      <p class="footer-text">
-        Simple calculators to help you plan loans, reduce debt, and reach your savings goals faster.
-      </p>
-    </div>
-
-    <!-- Navigation -->
-    <div class="footer-col">
-      <h4>Navigation</h4>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="calculators.html">Calculators</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-
-    <!-- Legal -->
-    <div class="footer-col">
-      <h4>Legal</h4>
-      <ul>
-        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-        <li><a href="terms.html">Terms</a></li>
-        <li><a href="disclaimer.html">Disclaimer</a></li>
-      </ul>
-    </div>
-
-  </div>
-
-  <div class="footer-bottom">
-    <p>© 2026 SheetXCell. All rights reserved.</p>
-  </div>
-</footer>
-</body>
+      <section class="section">
+        <div class="card-grid">
+          <a class="card" href="calculators/loan-payment.html">
+            <h3>Loan Payment Calculator</h3>
+            <p>Estimate monthly payment, total paid, and total interest.</p>
+          </a>
+          <a class="card" href="calculators/debt-payoff.html">
+            <h3>Debt Payoff Calculator</h3>
+            <p>Estimate how long it may take to pay off a debt.</p>
+          </a>
+          <a class="card" href="calculators/savings-goal.html">
+            <h3>Savings Goal Calculator</h3>
+            <p>Estimate monthly savings needed to reach your target.</p>
+          </a>
+          <a class="card" href="calculators/mortgage-extra-payment.html">
+            <h3>Mortgage Extra Payment Calculator</h3>
+            <p>Estimate how extra payments may save time and interest.</p>
+          </a>
+        </div>
+      </section>
 </html>
