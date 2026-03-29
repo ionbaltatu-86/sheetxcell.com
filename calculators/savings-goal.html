@@ -8,76 +8,41 @@
   <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
-  <header>
-    <nav class="nav container">
+  <header class="site-header">
+    <div class="container navbar">
       <a href="../index.html" class="brand">SheetXCell</a>
       <ul class="nav-links">
         <li><a href="../index.html">Home</a></li>
-        <li><a href="../calculators.html">Calculators</a></li>
+        <li><a href="../calculators.html" class="active">Calculators</a></li>
         <li><a href="../about.html">About</a></li>
         <li><a href="../contact.html">Contact</a></li>
       </ul>
-    </nav>
+    </div>
   </header>
 
-  <main class="container">
-    <section class="section">
-      <h1>Savings Goal Calculator</h1>
-      <p>Estimate the monthly savings needed to reach your target amount.</p>
+  <main>
+    <div class="container">
+      <section class="page-hero">
+        <h1>Savings Goal Calculator</h1>
+        <p>Estimate the monthly savings needed to reach a future target amount within your timeline.</p>
+      </section>
 
-      <div class="calculator-box">
-        <label for="savingsGoal">Savings Goal</label>
-        <input type="number" id="savingsGoal" placeholder="10000" />
+      <section class="section calculator-layout">
+        <div class="panel calculator-box">
+          <label for="savingsGoal">Savings Goal</label>
+          <input type="number" id="savingsGoal" placeholder="10000" />
 
-        <label for="savingsRate">Annual Return / Interest Rate (%)</label>
-        <input type="number" id="savingsRate" placeholder="3" step="0.01" />
+          <label for="savingsRate">Annual Return / Interest Rate (%)</label>
+          <input type="number" id="savingsRate" placeholder="3" step="0.01" />
 
-        <label for="savingsYears">Years to Reach Goal</label>
-        <input type="number" id="savingsYears" placeholder="3" />
+          <label for="savingsYears">Years to Reach Goal</label>
+          <input type="number" id="savingsYears" placeholder="3" />
 
-        <button onclick="calculateSavingsGoal()">Calculate</button>
-
-        <div id="savingsResult" class="result-box">
-          <p class="small-note">Your results will appear here.</p>
+          <button onclick="calculateSavingsGoal()">Calculate</button>
+          <p class="small-note">Use this to estimate a monthly contribution target.</p>
         </div>
-      </div>
-<section class="section">
-  <div class="content-box">
-    <h2>How this savings goal calculator works</h2>
-    <p>
-      This calculator estimates how much you need to save each month to reach a
-      future savings target. It uses your goal amount, expected annual return,
-      and timeline.
-    </p>
 
-    <h2>Example</h2>
-    <p>
-      If your goal is $10,000 in 3 years and your savings earn 3% annually,
-      this calculator estimates the monthly amount needed to stay on track.
-    </p>
-
-    <h2>Related calculators</h2>
-    <p>
-      You may also want to try the
-      <a href="loan-payment.html">Loan Payment Calculator</a> or the
-      <a href="debt-payoff.html">Debt Payoff Calculator</a>.
-    </p>
-  </div>
-</section>
-    </section>
-  </main>
-
- <footer class="footer">
-  <div class="container footer-links-wrap">
-    <p>© 2026 SheetXCell. All rights reserved.</p>
-    <div class="footer-links">
-      <a href="../privacy-policy.html">Privacy Policy</a>
-      <a href="../terms.html">Terms</a>
-      <a href="../disclaimer.html">Disclaimer</a>
-    </div>
-  </div>
-</footer>
-
-  <script src="../script.js"></script>
-</body>
+        <div class="panel">
+          <div id="savingsResult" class="result-box">
+            <p><strong>Monthly Savings Needed:</strong> Your result will appear here.</p>
 </html>
